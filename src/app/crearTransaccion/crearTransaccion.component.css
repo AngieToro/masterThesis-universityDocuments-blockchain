@@ -1,0 +1,17 @@
+.crearTransaccionForm {
+  min-width: auto;
+  max-width: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.mat-card{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 10em;
+}

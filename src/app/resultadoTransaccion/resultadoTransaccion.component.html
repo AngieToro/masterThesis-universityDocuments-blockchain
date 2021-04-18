@@ -1,0 +1,33 @@
+<mat-card class="mat-card">
+  <h2>
+      Resultado de validación de un documento académico
+  </h2>
+  <table class="tabla">
+    <p *ngFor="let dato of transaction">
+      <tr>
+        <td class="header"><strong>Cédula estudiante:</strong></td>
+        <td class="body">{{ dato.identification }}</td>
+      </tr>
+      <tr>
+        <td class="header"><strong>Nombre estudiante:</strong></td>
+        <td class="body">{{ dato.firstName }} {{ dato.secondName}} {{ dato.firstLastName }} {{ dato.secondLastName }}</td>
+      </tr>
+      <tr>
+        <td class="header"><strong>Código documento:</strong></td>
+        <td class="body">{{ dato.codeDoc }}</td>
+      </tr>
+      <tr>
+        <td class="header"><strong>Tipo de documento:</strong></td>
+        <td class="body">{{ dato.typeDoc }}</td>
+      </tr>
+      <tr>
+        <td class="header"><strong>Fecha del documento:</strong></td>
+        <td class="body">{{ dato.dateDoc }}</td>
+      </tr>
+      <tr>
+        <td class="header"><strong>Estatus validación:</strong></td>
+        <td class="body"><font color="green"><strong>{{ dato.status }} en Blockchain</strong></font></td>
+      </tr>
+    </p>
+  </table>
+</mat-card>

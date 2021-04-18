@@ -1,0 +1,48 @@
+<mat-card class="mat-card">
+  <h2>
+    Creación de validación de un documento académico
+  </h2>
+  <form class="crearTransaccionForm"
+    #createTransForm="ngForm"
+    (submit)="onCreateTransaction(createTransForm)">
+
+    <mat-form-field>
+      <mat-label>
+        Cédula del estudiante
+      </mat-label>
+      <input
+        matInput
+        name="identification"
+        ngModel
+        placeholder="Introduzca la cédula del estudiante"
+        type="text"
+        maxlength="8"
+        #identificationInput="ngModel"
+        required
+      >
+      <mat-error *ngIf="identificationInput.invalid">Por favor introduzca una cédula valida</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>
+        Código del documento
+      </mat-label>
+      <input
+        matInput
+        name="code"
+        ngModel
+        placeholder="Introduzca el código del documento"
+        type="text"
+        #codeInput="ngModel"
+        required
+      >
+      <mat-error *ngIf="codeInput.invalid">Por favor introduzca un código valido</mat-error>
+    </mat-form-field>
+      <button
+          mat-raised-button
+          color="accent"
+          type="submit"
+      >
+      Agregar
+      </button>
+  </form>
+</mat-card>

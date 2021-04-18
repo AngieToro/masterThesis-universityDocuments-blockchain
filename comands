@@ -1,0 +1,13 @@
+Crear el proyecto por primera vez ...
+
+composer archive create --sourceType dir --sourceName .
+
+composer network install --archiveFile university-documents@0.0.1.bna --card PeerAdmin@hlfv1
+
+composer network start --networkName university-documents --networkVersion 0.0.1 --networkAdmin admin --networkAdminEnrollSecret adminpw --card PeerAdmin@hlfv1 --file university-documents.card
+
+composer card import --file university-documents.card
+
+composer network ping --card admin@university-documents
+
+Proyecto ya creado

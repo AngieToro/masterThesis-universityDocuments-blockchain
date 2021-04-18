@@ -1,0 +1,30 @@
+**Universidad
+db.createCollection("universidads");
+db.universidads.insert({name: "Universidad Católica Andrés Bello", direction: "Urb. Montalbán - La Vega - Apartado 20332", numberPhone: "(0212)407-44-44", numberFax: "407-43-49", secretary: "Abog. Magaly M. Vásquez González"});
+db.universidads.deleteOne({_id: ObjectId("5eb4baa07a30dba73a9fc989")})
+
+
+**Estudiante
+db.createCollection("estudiantes");
+db.estudiantes.insertOne({identification: "18491845", firstName: "Angélica", secondName: "María", firstLastName: "Toro", secondLastName: "Vásquez"});
+db.estudiantes.insertOne({identification: "21070851", firstName: "Wildeer", secondName: "Alexander", firstLastName: "Rumbos", secondLastName: "Contreras"});
+db.estudiantes.insertOne({identification: "4273033", firstName: "Mirta", secondName: "Coromoto", firstLastName: "Vasquez", secondLastName: "Mata"});
+
+db.estudiantes.deleteOne({_id: ObjectId("5eaccd3538858d165e3dbe39")})
+
+
+**Documento
+db.createCollection("documentos");
+db.documentos.insertOne({code: "12345", type: "Titulo", faculty: "Ingeniería", career: "Ingeniero en Informática", creationDate: "03/03/2016", rector: "Francisco J. Virtuoso", record: "425", book: "CX", volume: "XII", invoice: "348", number: "3461"});
+db.documentos.insertOne({code: "4a5b6c", type: "Notas", faculty: "Ingeniería", career: "Ingenieria en Informática", creationDate: "27/04/2016", rector: "Francisco J. Virtuoso"});
+db.documentos.insertOne({code: "13", type: "Titulo", faculty: "Ciencias", career: "Administracion", creationDate: "12/12/2019", rector: "Francisco J. Virtuoso", note: "18.68"});
+
+
+db.documentos.deleteOne({_id: ObjectId("5f68073e9bb442928f534b5f")})
+
+
+**transacctions
+db.transacctions.deleteOne({"_id": ObjectId("5f6808ed860b1368957443c0")})
+
+**Blockchain
+- document-> quitar hashtransacction

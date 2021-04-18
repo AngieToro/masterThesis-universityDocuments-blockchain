@@ -1,0 +1,18 @@
+.mat-card{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 10em;
+}
+
+.tabla {
+  width: 100%;
+}
+
+.header{
+  text-align: left;
+}
+
+.body{
+  text-align: left;
+}
