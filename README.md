@@ -4,7 +4,7 @@
 
 ### This repository is about:
 1. University Document Management with Blockchain 
-2. Blockchain was implement with Hyperledger Fabric y Composer
+2. Blockchain was implement with Hyperledger Fabric and Composer
 
 ### Install
 * npm install
